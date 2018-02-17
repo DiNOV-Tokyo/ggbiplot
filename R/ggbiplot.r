@@ -169,9 +169,9 @@ ggbiplot <- function(pcobj, choices = 1:2, scale = 1, pc.biplot = TRUE,
   if(!is.null(df.u$labels)) {
     if(!is.null(df.u$groups)) {
       g <- g + geom_text(aes(label = labels, color = groups), 
-                         size = labels.size)
+                         size = labels.size, family = "HiraKakuPro-W3")
     } else {
-      g <- g + geom_text(aes(label = labels), size = labels.size)      
+      g <- g + geom_text(aes(label = labels), size = labels.size, family = "HiraKakuPro-W3")      
     }
   } else {
     if(!is.null(df.u$groups)) {
