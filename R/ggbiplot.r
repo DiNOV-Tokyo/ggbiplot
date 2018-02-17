@@ -146,6 +146,9 @@ ggbiplot <- function(pcobj, choices = 1:2, scale = 1, pc.biplot = TRUE,
   # Base plot
   g <- ggplot(data = df.u, aes(x = xvar, y = yvar)) + 
           xlab(u.axis.labs[1]) + ylab(u.axis.labs[2]) + coord_equal()
+  
+  # add base_family
+  g <- g + theme_bw(base_family = "HiraKakuProN-W3") 
 
   if(var.axes) {
     # Draw circle
